@@ -22,8 +22,33 @@ export function activate(activation: ActivationContext) {
   });
 
   context.ui.registerContextMenuAction(
-    "AudioTrack", // The scope
-    "Randomize BPM", // The label shown to the user
-    "my-ext.randomize-bpm", // The ID of the command to trigger
+    "AudioTrack", 
+    "Randomize BPM", 
+    "my-ext.randomize-bpm", 
+  );
+    context.ui.registerContextMenuAction(
+    "AudioClip", 
+    "Randomize BPM",
+    "my-ext.randomize-bpm", 
+  );   
+   context.ui.registerContextMenuAction(
+    "MidiClip", 
+    "Randomize BPM",
+    "my-ext.randomize-bpm", 
+  );
+    context.ui.registerContextMenuAction(
+    "MidiTrack", 
+    "Randomize BPM", 
+    "my-ext.randomize-bpm", 
+  );
+    context.ui.registerContextMenuAction(
+    "Scene",
+    "Randomize BPM",
+    "my-ext.randomize-bpm", 
+  );
+    context.ui.registerContextMenuAction(
+    "ClipSlot", 
+    "Randomize BPM", 
+    "my-ext.randomize-bpm", 
   );
 }
